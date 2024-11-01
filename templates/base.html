@@ -5,141 +5,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>777 - Contemporary Mexican Restaurant</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- Header Section -->
-    <header>
+    <header class="hero">
         <h1>777</h1>
         <h2>Ireland's Only Contemporary Mexican Restaurant</h2>
-        <button onclick="location.href='#booking'">Book Now</button>
-        <button onclick="location.href='#vouchers'">Buy Gift Vouchers</button>
+        <button class="btn" onclick="location.href='#booking'">Book Now</button>
+        <button class="btn" onclick="location.href='#vouchers'">Buy Gift Vouchers</button>
     </header>
 
     <!-- About Section -->
-    <section id="about">
-        <p>
-            The main restaurant feels like a dive bar but packs all the punch and sass of a culinary and cocktail
-            heavyweight. Afuera is our outdoor area — a liquid homage to Don Julio cocktails and tasty bites.
-        </p>
-        <p>
-            Combining the bold flavours of Mexico City with international influences, 777 hits all the right notes and
-            does so in style.
-        </p>
+    <section id="about" class="section">
+        <div class="container">
+            <p>
+                The main restaurant feels like a dive bar but packs all the punch and sass of a culinary and cocktail
+                heavyweight.
+            </p>
+            <p>
+                Combining the bold flavours of Mexico City with international influences, 777 hits all the right notes
+                and does so in style.
+            </p>
+        </div>
     </section>
 
     <!-- Menus Section -->
-    <section id="menus">
-        <h2>Menus</h2>
-        <nav>
-            <ul>
-                <li><a href="#indoor-dining">Indoor Dining Menu</a></li>
-                <li><a href="#afuera">Outdoor Afuera Menu</a></li>
-                <li><a href="#drinks">Drinks Menu</a></li>
-                <li><a href="#group-menu">Group Set Menu</a></li>
-            </ul>
-        </nav>
+    <section id="menus" class="section">
+        <div class="container">
+            <h2>Menus</h2>
+            <nav>
+                <ul>
+                    <li><a href="#indoor-dining">Indoor Dining Menu</a></li>
+                    <li><a href="#afuera">Outdoor Afuera Menu</a></li>
+                    <li><a href="#drinks">Drinks Menu</a></li>
+                    <li><a href="#group-menu">Group Set Menu</a></li>
+                </ul>
+            </nav>
 
-        <!-- Indoor Dining Menu -->
-        <article id="indoor-dining">
-            <h3>Indoor Dining Menu</h3>
-            <ul>
-                <li><strong>Botanas (Sharing Starters)</strong></li>
-                <li>TOTOPOS (V): Tortilla Chips, Guacamole, Salsa Tipica, Salsa Verde (SP) — €12</li>
-                <li>OYSTER SHOT: Orange, Habanero, Tomato, Pineapple (M, SP, C) — €4.5 Each</li>
-                <!-- Add other items here similarly -->
-            </ul>
+            <div class="menu-grid">
+                <!-- Indoor Dining Menu -->
+                <article id="indoor-dining" class="menu-item">
+                    <h3>Indoor Dining Menu</h3>
+                    <ul>
+                        <li><strong>Botanas (Sharing Starters)</strong></li>
+                        <li>TOTOPOS (V): Tortilla Chips, Guacamole, Salsa Tipica, Salsa Verde (SP) — €12</li>
+                        <li>OYSTER SHOT: Orange, Habanero, Tomato, Pineapple (M, SP, C) — €4.5 Each</li>
+                    </ul>
+                </article>
 
-            <ul>
-                <li><strong>Wood Fire Grill (Mains)</strong></li>
-                <li>CHICKEN: Mushroom Mole, Charred Courgette (SP) — €27</li>
-                <li>STRIPLOIN: Broccoli, Salsa Matcha, Caramelised Onion (SP, N-Peanut) — €34</li>
-                <!-- Add other items here similarly -->
-            </ul>
-        </article>
+                <!-- Outdoor Afuera Menu -->
+                <article id="afuera" class="menu-item">
+                    <h3>Outdoor Afuera Menu</h3>
+                    <ul>
+                        <li><strong>Botanas</strong></li>
+                        <li>TOTOPOS (V): Tortilla Chips, Guacamole, Salsa Tipica, Salsa Verde (SP) — €11</li>
+                        <li>OYSTER SHOT: Orange, Habanero, Tomato, Pineapple (M, SP, C) — €4.5 Each</li>
+                    </ul>
+                </article>
 
-        <!-- Outdoor Afuera Menu -->
-        <article id="afuera">
-            <h3>Outdoor Afuera Menu</h3>
-            <ul>
-                <li><strong>Botanas</strong></li>
-                <li>TOTOPOS (V): Tortilla Chips, Guacamole, Salsa Tipica, Salsa Verde (SP) — €11</li>
-                <li>OYSTER SHOT: Orange, Habanero, Tomato, Pineapple (M, SP, C) — €4.5 Each</li>
-                <!-- Add other items here similarly -->
-            </ul>
-        </article>
-
-        <!-- Drinks Menu -->
-        <article id="drinks">
-            <h3>Drinks Menu</h3>
-            <ul>
-                <li><strong>Hand-Crafted Cocktails (€14 to €16)</strong></li>
-                <li>MARGARITA: Don Julio Blanco Tequila, Triple Sec, Lime</li>
-                <li>OAXACAN OLD FASHIONED: 1800 Reposado Tequila, Ilegal Mezcal, Unicorn Tears</li>
-                <!-- Add other drinks here similarly -->
-            </ul>
-        </article>
-
-        <!-- Group Menu -->
-        <article id="group-menu">
-            <h3>Sample Set Group Menu (8 People or More)</h3>
-            <p>Indoor Menu €60, Outdoor €45 - Friday and Saturday</p>
-            <ul>
-                <li><strong>Starters</strong></li>
-                <li>Pre Starter: TOTOPOS with house-made guacamole, salsa tipica & salsa verde</li>
-                <li><strong>Small Plates</strong></li>
-                <li>CHICKEN BARBACOA: Avocado, Crema Asada, Ricotta, Morita Salsa (D,SP)</li>
-                <!-- Add other group items here similarly -->
-            </ul>
-        </article>
+                <!-- Drinks Menu -->
+                <article id="drinks" class="menu-item">
+                    <h3>Drinks Menu</h3>
+                    <ul>
+                        <li><strong>Hand-Crafted Cocktails (€14 to €16)</strong></li>
+                        <li>MARGARITA: Don Julio Blanco Tequila, Triple Sec, Lime</li>
+                        <li>OAXACAN OLD FASHIONED: 1800 Reposado Tequila, Ilegal Mezcal, Unicorn Tears</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
     </section>
 
     <!-- Special Offers Section -->
-    <section id="specials">
-        <h2>Special Offers</h2>
-        <ul>
-            <li><strong>Margarita Monday:</strong> Two Margaritas for €18</li>
-            <li><strong>Taco Tuesday:</strong> Two Tacos for €8</li>
-            <li><strong>777 Sundays:</strong> Select Dishes €7.77</li>
-        </ul>
+    <section id="specials" class="section">
+        <div class="container offers">
+            <h2>Special Offers</h2>
+            <ul>
+                <li><strong>Margarita Monday:</strong> Two Margaritas for €18</li>
+                <li><strong>Taco Tuesday:</strong> Two Tacos for €8</li>
+                <li><strong>777 Sundays:</strong> Select Dishes €7.77</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Phone: +353-(0)1-425-4052</p>
-        <p>Email: <a href="mailto:info@777.ie">info@777.ie</a></p>
-        <p>Location: Unit 7, Castle House, South Great George’s St, Dublin 2, Ireland</p>
-        <p>For private hire of our indoor and (Afuera) outdoor dining areas, contact us:</p>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p><strong>Phone:</strong> +353-(0)1-425-4052</p>
+            <p><strong>Email:</strong> <a href="mailto:info@777.ie">info@777.ie</a></p>
+            <p><strong>Location:</strong> Unit 7, Castle House, South Great George’s St, Dublin 2, Ireland</p>
+        </div>
     </section>
 
-    <!-- Opening Hours Section -->
-    <section id="hours">
-        <h2>Opening Hours</h2>
-        <h3>Indoor Opening Hours</h3>
-        <ul>
-            <li>Monday to Friday: 5 PM – Late</li>
-            <li>Saturday: 1 PM – Late</li>
-            <li>Sunday: 2 PM – Late</li>
-        </ul>
-
-        <h3>Afuera Opening Hours</h3>
-        <ul>
-            <li>Thursday: 5-12 AM</li>
-            <li>Friday: 5 PM - Late</li>
-            <li>Saturday: 1 PM - Late</li>
-        </ul>
-        <p><strong>Note:</strong> Strictly no under 21s after 5 PM (Indoor and Outdoor)</p>
-    </section>
-
-    <!-- Social Media Links -->
-    <footer>
+    <!-- Footer Section -->
+    <footer class="footer">
         <h2>Follow Us on Social Media</h2>
         <ul>
             <li><a href="https://instagram.com/777dublin" target="_blank">Instagram</a></li>
             <li><a href="https://twitter.com/777restaurant" target="_blank">Twitter</a></li>
-            <!-- Add more social media links if needed -->
         </ul>
     </footer>
 </body>
