@@ -15,41 +15,9 @@ body {
     /* Adjust for navbar height */
 }
 
-/* Navbar Styling */
-.navbar {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding: 15px 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #FFD700;
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-.navbar a:hover {
-    color: #FFD700;
-}
-
 /* Hero Section */
 .hero {
     background-image: url('/path/to/hero-image.jpg');
-    /* Add a suitable hero image */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -57,14 +25,26 @@ body {
     padding: 150px 20px;
 }
 
-.hero h1 {
+.hero-content h1 {
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-.hero p {
-    font-size: 1.2rem;
+.hero-content h2 {
+    font-size: 1.5rem;
     margin-top: 10px;
+    color: #FFD700;
+}
+
+.hero-content .btn {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px;
 }
 
 /* Container */
@@ -96,6 +76,23 @@ body {
 }
 
 /* Menu Styling */
+.menu-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -115,23 +112,6 @@ body {
     transform: translateY(-5px);
 }
 
-.menu-item h3 {
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.menu-item p {
-    font-size: 1rem;
-    color: #777;
-}
-
-.menu-item .price {
-    font-weight: bold;
-    color: #FFD700;
-    font-size: 1.2rem;
-    margin-top: 10px;
-}
-
 /* Special Offers */
 .offers {
     background-color: #333;
@@ -141,14 +121,13 @@ body {
     margin-top: 40px;
 }
 
-.offers h3 {
+.offers h2 {
     font-size: 1.5rem;
     color: #FFD700;
 }
 
-.offers p {
-    font-size: 1.1rem;
-    margin-top: 10px;
+.offers ul {
+    list-style: none;
 }
 
 /* Footer */
@@ -158,6 +137,12 @@ body {
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+}
+
+.footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .footer a {
