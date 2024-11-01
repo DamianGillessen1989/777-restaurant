@@ -12,17 +12,24 @@ body {
     color: #333;
     background-color: #f8f8f8;
     padding-top: 80px;
+    background-image: ;
     /* Adjust for navbar height */
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('/path/to/hero-image.jpg');
+    background-image: url('images/777.webp');
+    /* Use the correct path to your image */
     background-size: cover;
+    /* Cover the entire section */
     background-position: center;
+    /* Center the image */
     color: #fff;
+    /* Text color */
     text-align: center;
+    /* Center align text */
     padding: 150px 20px;
+    /* Adjust padding as necessary */
 }
 
 .hero-content h1 {
