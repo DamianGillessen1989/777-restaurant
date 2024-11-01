@@ -22,13 +22,6 @@ init_db()
 def index():
     return render_template('index.html')
 
-@app.route('/booking', methods=['GET', 'POST'])
-def booking():
-    if request.method == 'POST':
-        # Save booking details to the database
-        pass  # Complete with booking logic below
-    return render_template('booking.html')
-
 @app.route('/reviews', methods=['GET', 'POST'])
 def reviews():
     if request.method == 'POST':
@@ -52,3 +45,21 @@ def contact():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+@app.route('/booking', methods=['GET', 'POST'])
+def booking():
+    if request.method == 'POST':
+        name = request.form['name']
+        email = request.form['email']
+        phone = request.form['phone']
+        date = request.form['date']
+        time = request.form['time']
+        comments = request.form['comments']
+        conn = sqlite3.connect('db.sqlite3')
+        c = conn.cursor()
+        c.execute("INSERT INTO bookings (name, email, phone, date, time, comments) VALUES (?, ?, ?, ?, ?, ?)", 
+                  (name, email, phone, date, time, comments))
+        conn.commit()
+        conn.close()
+        return redirect(url_for('index'))
+    return render_template('booking.html')
