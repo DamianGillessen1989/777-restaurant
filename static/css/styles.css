@@ -12,14 +12,14 @@ body {
     color: #333;
     background-color: #f8f8f8;
     padding-top: 80px; /* Adjust for navbar height */
-    background-image: url('images/your-background-image.jpg'); /* Change to your image path */
+    background-image: url('images/777.webp');
     background-size: cover; /* Cover the entire body */
     background-position: center; /* Center the image */
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('images/777.webp'); /* Use the correct path to your image */
+    background-image: url('images/777.webp');
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the image */
     color: #fff; /* Text color */
