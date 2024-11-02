@@ -9,17 +9,25 @@
     display: none;
 }
 
+display: flex;
+flex-direction: column;
+align-items: center;
+
 #header {
-    display: flex;
     margin: 0;
-    flex-direction: column;
-    align-items: center;
     font-family: 'Neue Plak W01 Condensed Bold';
     font-size: 30px;
     line-height: 30px;
     padding: 6px 0 8px 0;
-    flex-direction: column;
-    align-items: center;
+}
+
+.text-border {
+    color: #333; /* Set the text color */
+    text-shadow:
+        -1px -1px 0 #fff, /* Top-left shadow */
+         1px -1px 0 #fff, /* Top-right shadow */
+        -1px  1px 0 #fff, /* Bottom-left shadow */
+         1px  1px 0 #fff; /* Bottom-right shadow */
 }
 
 /* Basic Styling */
