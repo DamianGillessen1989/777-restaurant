@@ -1,168 +1,38 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-image: url('images/777.webp'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    color: #fff; /* Set text color to ensure it’s readable */
+}
+
+h1, h2 {
     color: #333;
-    background-color: #f8f8f8;
-    padding-top: 80px; /* Adjust for navbar height */
-    background-image: url('images/777.webp');
-    background-size: cover; /* Cover the entire body */
-    background-position: center; /* Center the image */
 }
 
-/* Hero Section */
-.hero {
-    background-image: url('images/777.webp');
-    background-size: cover; /* Cover the entire section */
-    background-position: center; /* Center the image */
-    color: #fff; /* Text color */
-    text-align: center; /* Center align text */
-    padding: 150px 20px; /* Adjust padding as necessary */
+form {
+    margin-bottom: 20px;
 }
 
-.hero-content h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+label {
+    display: block;
+    margin: 5px 0;
 }
 
-.hero-content h2 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    color: #FFD700;
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.hero-content .btn {
+button {
+    padding: 10px 15px;
     background-color: #FFD700;
-    color: #333;
-    padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-weight: bold;
-    margin: 10px;
-}
-
-/* Container */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Section Styling */
-.section {
-    margin: 40px 0;
-}
-
-.section h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #1a1a1a;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 5px;
-}
-
-.section p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #555;
-}
-
-/* Menu Styling */
-.menu-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.menu-links li {
-    list-style: none;
-}
-
-.menu-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 8px 12px; /* Link padding */
-}
-
-.menu-grid {
-    display: grid; /* Grid layout for menu items */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
-    gap: 20px; /* Space between grid items */
-    margin-top: 20px; /* Space above grid */
-}
-
-.menu-item {
-    background-color: #fff; /* White background */
-    padding: 20px; /* Padding inside menu items */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.menu-item:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-}
-
-/* Special Offers */
-.offers {
-    background-color: #333; /* Dark background for offers */
-    color: #fff; /* White text color */
-    padding: 20px; /* Padding inside offers */
-    border-radius: 8px; /* Rounded corners */
-    margin-top: 40px; /* Space above offers */
-}
-
-.offers h2 {
-    font-size: 1.5rem; /* Offers title size */
-    color: #FFD700; /* Accent color for offers title */
-}
-
-.offers ul {
-    list-style: none; /* No bullet points for offers */
-}
-
-/* Footer */
-.footer {
-    background-color: #1a1a1a; /* Dark background for footer */
-    color: #fff; /* White text in footer */
-    text-align: center; /* Center align footer text */
-    padding: 20px; /* Padding inside footer */
-    margin-top: 40px; /* Space above footer */
-}
-
-.footer .social-links {
-    display: flex; /* Flexbox for social links */
-    justify-content: center; /* Center the links */
-    gap: 10px; /* Space between links */
-}
-
-.footer a {
-    color: #FFD700; /* Color of social links */
-    text-decoration: none; /* No underline */
-}
-
-.footer a:hover {
-    color: #fff; /* Change color on hover */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem; /* Smaller hero title on mobile */
-    }
-
-    .menu-grid {
-        grid-template-columns: 1fr; /* Single column on mobile */
-    }
 }
