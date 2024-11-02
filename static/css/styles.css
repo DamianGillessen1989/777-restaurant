@@ -5,6 +5,23 @@
     box-sizing: border-box;
 }
 
+#title {
+    display: none;
+}
+
+#header {
+    display: flex;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Neue Plak W01 Condensed Bold';
+    font-size: 30px;
+    line-height: 30px;
+    padding: 6px 0 8px 0;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Basic Styling */
 body {
     font-family: 'Arial', sans-serif;
