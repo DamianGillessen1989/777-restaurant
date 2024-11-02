@@ -18,12 +18,7 @@
 }
 
 .text-border {
-    color: #333; /* Set the text color */
-    text-shadow:
-        -1px -1px 0 #fff, /* Top-left shadow */
-         1px -1px 0 #fff, /* Top-right shadow */
-        -1px  1px 0 #fff, /* Bottom-left shadow */
-         1px  1px 0 #fff; /* Bottom-right shadow */
+    
 }
 
 /* Basic Styling */
